@@ -130,6 +130,7 @@ body {
   font-size: 16px;
   color: #333;
   text-align: center;
+  background-color: #333;
 }
 
 a {
@@ -176,3 +177,11 @@ h6 {
     height: 100vh;
 }
 
+#script-select{
+  color: whitesmoke;
+  background-color: #333;
+}
+
+#caption{
+  color: whitesmoke;
+}
