@@ -23,6 +23,20 @@
 
 <body>
     <div class="img-fluid">
+        <select id="script-select">
+            <option value="./src/scripts/catAge.js">Cat Age Calculator</option>
+            <option value="./src/scripts/dogAge.js">Dog Age Calculator</option>
+            <!-- <option value="script3">Script 3</option> -->
+        </select>
+        
+        <script>
+            document.getElementById("script-select").addEventListener("change", function () {
+                var selectedScript = this.value;
+                var script = document.createElement("script");
+                script.src = selectedScript;
+                document.body.appendChild(script);
+            });
+        </script>
         <div class="container-fluid content" style="background-image: url(./src/img/10654701_19143282.jpg); height: 100vh;">
             <h1>Welcome to My Playground</h1> 
             <h2>"All in a Day's Work"</h2>
@@ -36,7 +50,7 @@
         <a
             href="https://www.freepik.com/free-vector/vector-background-cartoon-playground-park-summer-landscape-with-green-trees-plants-bu_4015263.htm#query=playground&position=0&from_view=search&track=sph">Image
             by vectorpouch</a>
-            <script src="./src/scripts/catAge.js"></script>
+            <!-- <script src="./src/scripts/catAge.js"></script> -->
     </footer>
 </body>
 
