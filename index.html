@@ -19,17 +19,17 @@
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
         <!-- script selector script -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var select = document.getElementById("script-select");
-                select.addEventListener("change", function () {
-                    var selectedScript = this.value;
-                    var script = document.createElement("script");
-                    script.src = selectedScript;
-                    document.body.appendChild(script);
-                });
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var select = document.getElementById("script-select");
+            select.addEventListener("change", function () {
+                var selectedScript = this.value;
+                var script = document.createElement("script");
+                script.src = selectedScript;
+                document.body.appendChild(script);
             });
-        </script>
+        });
+    </script>
     <title>Playground</title>
 </head>
 
@@ -38,8 +38,16 @@
         <select id="script-select">
             <option value="./src/scripts/catAge.js">Cat Age Calculator</option>
             <option value="./src/scripts/dogyears.js">Dog Age Calculator</option>
-            <!-- <option value="script3">Script 3</option> -->
-        </select>
+    <title>Playground</title>
+</head>
+
+<body>
+    <div class="img-fluid">
+    <select id="script-select">
+        <option value="./src/scripts/catAge.js">Cat Age Calculator</option>
+        <option value="./src/scripts/dogyears.js">Dog Age Calculator</option>
+        <!-- <option value="script3">Script 3</option> -->
+    </select>
         
         <script>
             document.getElementById("script-select").addEventListener("change", function () {
@@ -62,7 +70,8 @@
         <a
             href="https://www.freepik.com/free-vector/vector-background-cartoon-playground-park-summer-landscape-with-green-trees-plants-bu_4015263.htm#query=playground&position=0&from_view=search&track=sph">Image
             by vectorpouch</a>
-            <!-- <script src="./src/scripts/catAge.js"></script> -->
+        <script src="./src/scripts/catAge.js"></script>
+        <script src="./src/scripts/dogyears.js"></script>
     </footer>
 </body>
 
