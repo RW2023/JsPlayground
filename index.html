@@ -21,10 +21,10 @@
         <!-- script selector script -->
        <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var select = document.getElementById("script-select");
+            let select = document.getElementById("script-select");
             select.addEventListener("change", function () {
-                var selectedScript = this.value;
-                var script = document.createElement("script");
+                let selectedScript = this.value;
+                let script = document.createElement("script");
                 script.src = selectedScript;
                 document.body.appendChild(script);
             });
@@ -51,8 +51,8 @@
         
         <script>
             document.getElementById("script-select").addEventListener("change", function () {
-                var selectedScript = this.value;
-                var script = document.createElement("script");
+                let selectedScript = this.value;
+                let script = document.createElement("script");
                 script.src = selectedScript;
                 document.body.appendChild(script);
             });
