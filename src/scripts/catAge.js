@@ -10,7 +10,7 @@ document
     }
 
     // Get the birth year of the cat from the user
-    const birthYear = prompt("Enter the birth year of the cat:");
+    let birthYear = parseInt(prompt("Enter the birth year of the cat:"));
 
     // Validate the input
     if (!birthYear || isNaN(birthYear)) {
